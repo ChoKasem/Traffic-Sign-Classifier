@@ -115,8 +115,15 @@ The training, validation, and test accuracy are all above 90%, which is very hig
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image3.1.1] ![alt text][image3.1.2] ![alt text][image3.1.3]
-![alt text][image3.1.4]![alt text][image3.1.5]
+![alt text][image3.1.1] 
+
+![alt text][image3.1.2]
+
+![alt text][image3.1.3]
+
+![alt text][image3.1.4]
+
+![alt text][image3.1.5]
 
 The first image might be difficult to classify because the image is not at the center unlike the image in the training dataset. The last image also have addition text sign to see if it will cause the model to give wrong prediction.
 
