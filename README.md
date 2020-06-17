@@ -189,6 +189,18 @@ For the fourth image, the model predict a No Passing sign. However, the sign is 
 | 2.26E-12	      			| No Passing for Vehicles over 3.5 Metric Tons	|
 | 9.17E-13				    | Yield     							|
 
+## 4. Discussion
+
+### 1. Problem
+
+The first and most common problem with machine learning is uneven number of data in each class. Therefore, I use data augmentation by changing the contrast of the image and reposition it randomly. This would take time to create thousands and thousands of image.
+
+Another problem is that using dropout actually lower the validation accuracy. Therefore, I decide to remove it. It might be from how all the note is actually contribute to detect the sign. Next time I could lower the probability of the dropout so it happend less and test the accuracy.
+
+### 2. Future Improvement
+
+In the future, we could gather more data, especially on the class that has lower data than others. Next I could use technique like SIFT to improve detection regardless of the size of image. Currently, the sign have to cover majority of the area of the image. In real life, the camera will look at a wide range and the sign the be relatively small. There is a high chance it won't detect accurately.
+
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
